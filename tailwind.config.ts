@@ -13,6 +13,7 @@ const config: Config = {
         whiteAlpha: 'rgba(255, 255, 255, 0.9)',
         blackAlpha: 'rgba(0, 0, 0, 0.5)',
         greyAlpha: 'rgba(0, 0, 0, 0.1)',
+        darkGrey: '#666666',
         greenAlpha: '#7f8c8d',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
