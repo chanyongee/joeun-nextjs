@@ -7,6 +7,7 @@ export type MenuItem = {
 export const menuList: MenuItem[] = [
   {
     title: '회사소개',
+    to: '/about',
     children: [
       {
         title: '회사소개',
@@ -32,9 +33,11 @@ export const menuList: MenuItem[] = [
   },
   {
     title: '사업영역',
+    to: '/story/environment',
     children: [
       {
         title: '환경영향평가',
+        to: '/story/environment',
         children: [
           {
             title: '소개',
@@ -60,6 +63,7 @@ export const menuList: MenuItem[] = [
       },
       {
         title: '재해영향평가',
+        to: '/story/disaster',
         children: [
           {
             title: '소개',
@@ -81,6 +85,7 @@ export const menuList: MenuItem[] = [
       },
       {
         title: '엔지니어링 (도시설계진단)',
+        to: '/story/engineering/urban-planning',
         children: [
           {
             title: '도시계획',
@@ -105,6 +110,7 @@ export const menuList: MenuItem[] = [
       },
       {
         title: '종합건설',
+        to: '/story/construction/civil',
         children: [
           {
             title: '토목공사',
@@ -126,6 +132,7 @@ export const menuList: MenuItem[] = [
       },
       {
         title: '환경공사관리(인허가)',
+        to: '/story/permission/environment',
         children: [
           {
             title: '환경인허가',
@@ -145,6 +152,7 @@ export const menuList: MenuItem[] = [
   },
   {
     title: '사업실적',
+    to: '/performance/environment',
     children: [
       {
         title: '환경영향평가',
@@ -170,7 +178,7 @@ export const menuList: MenuItem[] = [
       },
       {
         title: '재해영향평가',
-        to: '/performance/disaster',
+        to: '/performance/disaster/disaster',
         children: [
           {
             title: '재해영향평가',
@@ -188,7 +196,7 @@ export const menuList: MenuItem[] = [
       },
       {
         title: '엔지니어링 (도시설계진단)',
-        to: '/performance/engineering',
+        to: '/performance/engineering/urban-planning',
         children: [
           {
             title: '도시계획',
@@ -213,7 +221,7 @@ export const menuList: MenuItem[] = [
       },
       {
         title: '환경공사관리(인허가)',
-        to: '/performance/permission',
+        to: '/performance/permission/environment',
         children: [
           {
             title: '환경인허가',

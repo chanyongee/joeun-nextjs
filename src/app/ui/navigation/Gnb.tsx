@@ -10,7 +10,6 @@ import { GnbItem } from '@/app/ui/navigation/GnbItem'
 import Image from 'next/image'
 import LogoImage from '@/app/assets/images/joeun_logo.svg'
 import { cn } from '@/lib/utils'
-import { usePathname } from 'next/navigation'
 import { menuList } from '@/app/assets/data/menuList'
 import { Lnb } from '@/app/ui/navigation/Lnb'
 
@@ -19,7 +18,6 @@ export default function Gnb() {
   const [hoveredMenu, setHoveredMenu] = useState('')
   const lnbContent = menuList.find(menu => menu.title === hoveredMenu)
 
-  const pathname = usePathname()
   const open = () => {
     setIsOpen(true)
   }
@@ -35,14 +33,13 @@ export default function Gnb() {
       }
     }
   }
-  const isBackgroundWhite = pathname !== '/' || !!lnbContent
 
   return (
     <Collapsible open={isOpen}>
       <CollapsibleTrigger
         className={cn(
           'flex-column relative z-10 flex h-[6.8rem] w-full',
-          isBackgroundWhite && 'bg-whiteAlpha',
+          !!lnbContent && 'bg-whiteAlpha',
         )}
         onMouseEnter={open}
         onMouseMove={onMouseMove}
