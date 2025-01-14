@@ -110,23 +110,23 @@ export const menuList: MenuItem[] = [
       },
       {
         title: '종합건설',
-        to: '/story/construction/civil',
+        to: '',
         children: [
           {
             title: '토목공사',
-            to: '/story/construction/civil',
+            to: '',
           },
           {
             title: '건축공사',
-            to: '/story/construction/architecture',
+            to: '',
           },
           {
             title: '조경',
-            to: '/story/construction/landscape',
+            to: '',
           },
           {
             title: '전기',
-            to: '/story/construction/electric',
+            to: '',
           },
         ],
       },
