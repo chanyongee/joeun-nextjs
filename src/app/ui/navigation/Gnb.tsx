@@ -48,8 +48,8 @@ export default function Gnb() {
           <Image src={LogoImage} alt="company logo" className="flex" />
         </GnbItem>
         <GnbItem title="회사소개" to="/about" />
-        <GnbItem title="사업영역" to="/story" />
-        <GnbItem title="사업실적" to="/performance" />
+        <GnbItem title="사업영역" to="/story/environment" />
+        <GnbItem title="사업실적" to="/performance/environment" />
       </CollapsibleTrigger>
       <CollapsibleContent onMouseLeave={close}>
         {!!isOpen && lnbContent && <Lnb content={lnbContent} />}

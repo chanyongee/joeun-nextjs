@@ -1,6 +1,6 @@
-import { Noto_Serif_KR } from 'next/font/google'
+import { Noto_Sans_KR } from 'next/font/google'
 
-export const NotoSansKr = Noto_Serif_KR({
+export const NotoSansKr = Noto_Sans_KR({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600'],
+  weight: ['300', '400', '500', '600', '700'],
 })

@@ -96,9 +96,6 @@ export const menuList: MenuItem[] = [
             to: '/story/engineering/landscape',
           },
           {
-            title: '전기설계 및 감리',
-          },
-          {
             title: '토목설계 및 감리',
             to: '/story/engineering/civil',
           },
@@ -152,11 +149,11 @@ export const menuList: MenuItem[] = [
   },
   {
     title: '사업실적',
-    to: '/performance/environment',
+    to: '/performance/environment/environment',
     children: [
       {
         title: '환경영향평가',
-        to: '/performance/environment',
+        to: '/performance/environment/environment',
         children: [
           {
             title: '환경영향평가',

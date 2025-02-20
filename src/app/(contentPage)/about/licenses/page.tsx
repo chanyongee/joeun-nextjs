@@ -7,12 +7,13 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { licenses, patents } from '@/app/assets/data/licenses'
+import { PageTitle } from '@/app/ui/PageTitle'
 
 export default function AboutLicensePage() {
   return (
     <section className="flex w-full flex-col gap-16">
       <section className="flex flex-col gap-8">
-        <h2 className="text-3xl font-semibold">면허 현황</h2>
+        <PageTitle title="면허 현황" />
         <Table>
           <TableHeader>
             <TableRow>

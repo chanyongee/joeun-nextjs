@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { requestStaticMap } from '@/lib/map'
 import { Separator } from '@/components/ui/separator'
 import Link from 'next/link'
+import { PageTitle } from '@/app/ui/PageTitle'
 
 export default function AboutMapPage() {
   const WIDTH = window.innerWidth
@@ -20,7 +21,7 @@ export default function AboutMapPage() {
   ]
   return (
     <section className="flex w-full flex-col gap-8">
-      <h1 className="text-3xl font-semibold">오시는 길</h1>
+      <PageTitle title="오시는 길" />
       <div className="relative self-center">
         <Image
           src={requestStaticMap(WIDTH, HEIGHT)}
