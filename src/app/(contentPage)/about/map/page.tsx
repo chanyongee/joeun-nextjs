@@ -5,8 +5,8 @@ import { Separator } from '@/components/ui/separator'
 import Link from 'next/link'
 import { PageTitle } from '@/app/ui/PageTitle'
 
-export default function AboutMapPage() {
-  const WIDTH = window.innerWidth
+export default function Page() {
+  const WIDTH = typeof window === 'undefined' ? 0 : window.innerWidth
   const HEIGHT = 600
 
   const numbers = [
